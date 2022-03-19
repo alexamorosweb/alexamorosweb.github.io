@@ -1,0 +1,711 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+section{
+    padding:2rem 7%;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 7%;
+    border-bottom: .1rem solid gray;
+    top:0; 
+    left: 0; 
+    right: 0;
+}
+
+.header .logo img{
+    height: 6rem;
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 2rem;
+    color:black;
+}
+
+.header .navbar a:hover{
+    color:#d3ad7f;
+    border-bottom: .1rem solid #d3ad7f;
+    padding-bottom: .5rem;
+}
+
+.header #nav-toggle-label div{
+    display: none;
+}
+
+.header #nav-toggle{
+    display: none;
+}
+
+.header .icons a div{
+    color: black;
+    margin:0 1rem;
+    font-size: 26px;
+}
+
+.about{
+    margin: 80px auto;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex:1 1 45rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+.about .row .content{
+    flex:1 1 45rem;
+    padding:2rem;
+}
+
+.about .row .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color:black;
+}
+
+.about .row .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding:1rem 0;
+    color:black;
+}
+
+.heading{
+    text-align: center;
+    color:black;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color:#d3ad7f;
+    text-transform: uppercase;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: #d3ad7f;
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+.products{
+    margin: 80px auto;
+}
+
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.products .box-container .box{
+    border:.1rem solid gray;
+    padding: 2rem;
+    text-align: center;
+}
+
+.products .box-container .box .image{
+    padding: 2.5rem 0;
+}
+
+.products .box-container .box .image img{
+    height: 25rem;
+}
+
+.products .box-container .box .content h3{
+    color:black;
+    font-size: 2.5rem;
+}
+
+.products .box-container .box .content .price{
+    color:black;
+    font-size: 2.5rem;
+}
+
+.contact{
+    margin: 80px auto;
+}
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.contact .row .map{
+    flex:1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row .dades{
+    text-align: center; 
+}
+
+.contact .row .dades h3{
+    padding:0.5rem 0;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color:black;
+}
+.contact .row .dades div{
+    font-size: 1.6rem;
+    color:black;
+    padding:0.5rem 0;
+    line-height: 1.8;
+}
+
+.contact .row .dades form{
+    flex:1 1 45rem;
+    padding:2rem 2rem;
+    text-align: center;  
+}
+
+.contact .row .dades form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color:black;
+}
+
+.contact .row .dades form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border:.1rem solid gray;
+    background-color: white;
+}
+
+.contact .row .dades form .inputBox span{
+    color:black;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row .dades form .inputBox input{
+    width: 100%;
+    padding:2rem;
+    font-size: 1.7rem;
+    color:black;
+    text-transform: none;
+    background:none;
+}
+
+.contact .row .dades form .textAreaBox textarea{
+    width: 100%;
+    padding:2rem;
+    font-size: 1.7rem;
+    color:black;
+    text-transform: none;
+    border:.1rem solid gray;
+    resize: none;
+}
+
+.login{
+    margin: 80px auto;
+}
+
+.login .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.login .row .image{
+    flex:1 1 45rem;
+}
+
+.login .row .image img{
+    width: 100%;
+}
+
+.login .row .content{
+    flex:1 1 45rem;
+    padding:2rem;
+}
+
+.login .row .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color:black;
+}
+
+.login .row .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding:1rem 0;
+    color:black;
+}
+
+.login .row .content form .form-input{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border:.1rem solid gray;
+    background-color: white;
+}
+
+.login .row .content form .form-input input{
+    width: 100%;
+    padding:2rem;
+    font-size: 1.7rem;
+    color:black;
+    text-transform: none;
+    background:none;
+}
+
+.product{
+    margin: 80px auto;
+}
+
+.product .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product .row .image{
+    flex:1 1 45rem;
+}
+
+.product .row .image img{
+    width: 100%;
+}
+.product .row .content{
+    flex:1 1 45rem;
+    padding:2rem;
+}
+
+.product .row .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color:black;
+}
+
+.product .row .content .box-label label{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.8;
+    padding:1rem 0;
+    color:#d3ad7f;
+}
+
+.product .row .content .box-label span{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding:1rem 0;
+    color:black;
+}
+
+.product .row .content .box-input{
+    width: 10%;
+    align-items: center;
+    border:.1rem solid gray;
+    background-color: white;
+}
+
+.product .row .content .box-input input{
+    width: 100%;
+    padding:1rem;
+    font-size: 1.7rem;
+    color:black;
+    text-transform: none;
+    background:none;
+}
+
+.cart{
+    margin: 80px auto;
+}
+
+.cart p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding-top:1.5rem;
+    color:black;
+}
+
+.cart small{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding:0;
+    color:black;
+}
+
+.cart .cart-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart .cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart th{
+    text-align: left;
+    padding: 5px;
+    background: #d3ad7f;
+    font-size: 2rem;
+    line-height: 1.8;
+    color:white;
+}
+
+.cart td{
+    padding: 10px 5px;
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding:1rem 0;
+    color:black;
+}
+
+.cart td input{
+    border:.1rem solid gray;
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+.cart td a{
+    color:#d3ad7f;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cart td img{
+    width: 150px;
+    height: 130px;
+    margin-right: 10px;
+}
+
+.cart .total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart .total-price table{
+    border-top: 3px solid #d3ad7f;
+    width: 100%;
+    max-width: 400px;
+}
+
+.cart td:last-child{
+    text-align: right;
+}
+
+.cart th:last-child{
+    text-align: right;
+}
+
+.cart .btn-container{
+    text-align: right;   
+}
+
+.producte-formulari{
+    margin: 80px auto;
+}
+
+.producte-formulari h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color:black;
+}
+
+.producte-formulari form .form-input{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border:.1rem solid gray;
+    background-color: white;
+}
+
+.producte-formulari form .form-input input{
+    width: 100%;
+    padding:2rem;
+    font-size: 1.7rem;
+    color:black;
+    text-transform: none;
+    background:none;
+}
+
+.producte-formulari .producte-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.producte-formulari .producte-table th{
+    text-align: left;
+    padding: 5px;
+    background: #d3ad7f;
+    font-size: 2rem;
+    line-height: 1.8;
+    color:white;
+}
+
+.producte-formulari td{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding:1rem 0;
+    color:black;
+}
+
+.producte-formulari label{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding:1rem 0.7rem;
+    color:black;
+}
+
+.comandes{
+    margin: 80px auto;
+}
+
+.comandes .comandes-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comandes th{
+    text-align: left;
+    padding: 5px;
+    background: #d3ad7f;
+    font-size: 2rem;
+    line-height: 1.8;
+    color:white;
+}
+
+.comandes td{
+    padding: 10px 5px;
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding:1rem 0;
+    color:black;
+}
+
+.comandes td:last-child{
+    text-align: right;
+}
+
+.comandes th:last-child{
+    text-align: right;
+}
+
+.factura{
+    margin: 80px auto;
+}
+
+.factura p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    color:black;
+}
+
+.factura small{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding:0;
+    color:black;
+}
+
+.factura article{
+    padding-bottom: 3rem;
+}
+
+.factura .factura-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.factura .factura-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.factura th{
+    text-align: left;
+    padding: 5px;
+    background: #d3ad7f;
+    font-size: 2rem;
+    line-height: 1.8;
+    color:white;
+}
+
+.factura td{
+    padding: 10px 5px;
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding:1rem 0;
+    color:black;
+}
+
+.factura td input{
+    border:.1rem solid gray;
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+.factura td img{
+    width: 150px;
+    height: 130px;
+    margin-right: 10px;
+}
+
+.factura .total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.factura .total-price table{
+    border-top: 3px solid #d3ad7f;
+    width: 100%;
+    max-width: 400px;
+}
+
+.factura td:last-child{
+    text-align: right;
+}
+
+.factura th:last-child{
+    text-align: right;
+}
+
+.factura .btn-container{
+    text-align: right;   
+}
+
+footer{
+    text-align: center;
+    font-size: 2rem;
+    color:black;
+    font-weight: lighter;
+    padding:1.5rem;
+}
+
+footer small{
+    font-size: 2rem;
+    color:black;
+    font-weight: lighter;
+    padding:1.5rem;
+}
+
+@media (max-width:1331px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:1.5rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+    .contact .row{
+        display: block;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .header #nav-toggle-label div{
+        display: inline-block;
+        font-size: 26px;
+        line-height: 70px;
+    }
+
+    .header .navbar{
+        position: absolute;
+        display: none;
+        right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: 100%;
+        top: 100px;
+    }
+
+    .header .navbar a{
+        color:black;
+        display: block;
+        margin:1.5rem;
+        padding:.5rem;
+        font-size: 2rem;
+    }
+
+    .header .navbar a:hover{
+        color:black;
+        display: block;
+        margin:1.5rem;
+        padding:.5rem;
+        font-size: 2rem;
+        border-bottom: none;
+    }
+
+    .header #nav-toggle:checked ~ .navbar{
+        right:0;
+        display: block;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}
